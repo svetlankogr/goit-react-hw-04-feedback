@@ -1,0 +1,51 @@
+.btnsList {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #f8d24e;
+  border: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.good {
+  composes: btn;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(154, 253, 45, 1) 100%
+  );
+}
+
+.neutral {
+  composes: btn;
+  background: rgb(228, 220, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 220, 195, 1) 0%,
+    rgba(243, 255, 38, 1) 100%
+  );
+}
+
+.bad {
+  composes: btn;
+  background: rgb(190, 176, 170);
+  background: linear-gradient(
+    0deg,
+    rgba(190, 176, 170, 1) 0%,
+    rgba(255, 59, 38, 1) 100%
+  );
+}

@@ -1,0 +1,9 @@
+.notification {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgba(87, 213, 211, 0.584);
+  border: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+}
